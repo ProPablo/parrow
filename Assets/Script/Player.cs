@@ -52,14 +52,6 @@ public class Player : MonoBehaviour
                 Gun.rotation = Quaternion.Euler(0, 0, angle * Mathf.Rad2Deg);
                 Gun.localPosition = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)).normalized * GUN_RADIUS;
                 anim.SetFloat("FacingAngle", (angle * Mathf.Rad2Deg + 270) % 360);
-
-
-                
-                break;
-
-            case State.SHOOTING:
-                //Vector2 diff = arrow.position - currentCamera.transform.position;
-                //currentCamera.transform.position += new Vector3(diff.x, diff.y, -10) * CAMERA_LERP_SPEED * Time.deltaTime;
                 break;
         }
         if (Input.GetMouseButtonDown(0))

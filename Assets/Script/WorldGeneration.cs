@@ -23,7 +23,6 @@ public class WorldGeneration : MonoBehaviour
     float initialSnow = 0.0f;
 
 
-
     float genMapTimer = 0f;
     public float[,] snowMatrix;
     void Start()
@@ -89,6 +88,7 @@ public class WorldGeneration : MonoBehaviour
                 {
 
                     snowMatrix[i, j] += SNOW_INCREMENT;
+                    
                     snowTileMap.SetTile(loc, SnowTile);
                     snowTileMap.SetTileFlags(loc, TileFlags.None);
                     snowTileMap.SetColor(loc, new Color(1, 1, 1, snowMatrix[i, j]));

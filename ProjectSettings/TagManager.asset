@@ -44,3 +44,6 @@ TagManager:
   - name: GridTiles
     uniqueID: 368374155
     locked: 0
+  - name: Lighting
+    uniqueID: 2916636797
+    locked: 0
